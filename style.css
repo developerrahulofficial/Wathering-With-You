@@ -1,0 +1,272 @@
+:root {
+	--white: #fff;
+	--bright: #ccc;
+	--dark: #666;
+}
+
+#profile1, #profile2 {
+	width: 20%;
+}
+
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: "Roboto";
+	font-weight: 400;
+	font-size: 14px;
+	color: var(--dark);
+}
+
+body {
+	background-image: url("media/heart background.svg");
+	background-size: 30px 30px;
+}
+
+#panel {
+	position: relative;
+	height: auto;
+}
+
+#one-panel,
+#two-panel {
+	display: inline-block;
+	width: 50%;
+	height: auto;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	vertical-align: top;
+}
+
+#one-panel {
+	padding-right: 20px;
+	padding-left: calc(50vw - 600px);
+}
+
+#two-panel {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	padding-left: 20px;
+	text-align: right;
+	padding-right: calc(50vw - 600px);
+}
+
+#panel-container-left {
+	width: auto;
+	height: auto;
+	color: inherit;
+	padding-left: 40px;
+}
+
+#panel-container-right {
+	width: auto;
+	height: auto;
+	color: inherit;
+	padding-right: 40px;
+}
+
+#vertical-divider {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: calc(50vw - 0.5px);
+	width: 1px;
+	background-color: var(--bright);
+}
+
+#heart {
+	position: absolute;
+	width: 70px; /* Adjust the size as needed */
+	height: 70px;
+	animation: heartbeat 1s infinite; /* Apply the heartbeat animation */
+	left: calc(50% - 35px); /* Adjusted the position to center the heart */
+	top: calc(50% - 35px);
+  }
+  
+  #heart svg {
+	width: 100%;
+	height: 100%;
+  }
+  
+  #heart path {
+	fill: red; /* Set the heart color to red */
+  }
+/* Add the following CSS rules at the end of your style.css file */
+  
+  @keyframes heartbeat {
+	0% {
+	  transform: scale(1);
+	}
+	50% {
+	  transform: scale(1.3);
+	}
+	100% {
+	  transform: scale(1);
+	}
+  }
+  
+
+.divider {
+	width: 100%;
+	height: 1px;
+	margin: 40px 0 40px 0;
+	background-color: var(--bright);
+}
+
+.invisible-divider {
+	width: 100%;
+	height: 40px;
+}
+
+#main {
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+::-moz-selection {
+	color: var(--dark);
+	background: var(--bright);
+}
+
+::selection {
+	color: var(--dark);
+	background: var(--bright);
+}
+
+/* -------- TOP -------- */
+
+#top {
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding: 40px;
+	border-bottom: solid 1px var(--bright);
+}
+
+#heartbeats {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	background-color: var(--bright);
+	z-index: 0;
+}
+
+#heartbeats-left,
+#page-title {
+	position: relative;
+	font-size: 48px;
+	font-weight: 700;
+	color: var(--bright);
+	text-shadow:
+		-1px -1px 0 var(--white),  
+		1px -1px 0 var(--white),
+		-1px 1px 0 var(--white),
+		1px 1px 0 var(--white);
+	z-index: 1;
+}
+
+#page-title {
+	position: absolute;
+	right: 40px;
+	top: 40px;
+}
+
+#page-title {
+	left: auto;
+	right: 40px;
+}
+
+/* -------- DAT -------- */
+
+.location,
+.name,
+.time {
+	color: inherit;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.location {
+	font-size: 24px;
+	font-weight: 700;
+	margin: 0;
+}
+
+.name {
+	font-size: 28px;
+	font-weight: 700;
+}
+
+.main-data {
+	color: inherit;
+	font-size: 24px;
+}
+
+.tag-holder {
+	display: inline-block;
+	padding: 6px;
+	margin-right: 4px;
+	margin-bottom: 4px;
+	border-radius: 2px;
+	border: solid 1px;
+	border-color: inherit;
+	color: inherit;
+}
+
+.tag-content {
+	color: inherit;
+}
+
+/* -------- BOT -------- */
+
+#bottom {
+	width: 100%;
+	height: auto;
+	padding: 40px;
+	border-top: solid 1px var(--bright);
+}
+
+#time-till-meet,
+#time-separate {
+	font-weight: 700;
+	font-size: 24px;
+	color: var(--bright);
+}
+
+#date-left {
+	display: inline-block;
+}
+
+#date-right {
+	display: inline-block;
+	position: absolute;
+	right: 40px;
+}
+
+@media all and (max-width: 900px) {
+	#heartbeats-left,
+	#page-title {
+		font-size: 24px;
+	}
+
+	#time-till-meet,
+	#time-separate {
+		font-size: 18px;
+	}
+}
+
+@media all and (max-width: 480px) {
+	#heartbeats-left,
+	#page-title {
+		font-size: 18px;
+	}
+
+	#time-till-meet,
+	#time-separate {
+		font-size: 16px;
+	}
+}

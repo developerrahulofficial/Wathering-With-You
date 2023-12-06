@@ -1,0 +1,86 @@
+<html>
+<head>
+	<title>Weathering with You</title>
+	<meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=0.7, minimum-scale=0.7, user-scalable=no">
+	<meta charset="UTF-8">
+
+	<meta property="og:url" content="http://exp.v-os.ca/">
+	<meta property="og:title" content="V-OS Experiments">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="Experiments from V-OS.">
+	<meta property="og:image" content="http://exp.v-os.ca/ui/ico.png">
+
+	<meta name="twitter:url" content="http://exp.v-os.ca/">
+	<meta name="twitter:title" content="V-OS Experiments">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:description" content="Experiments from V-OS.">
+	<meta name="twitter:image" content="http://exp.v-os.ca/ui/ico.png">
+
+	<meta name="description" content="Experiments from V-OS.">
+	<meta name="keywords" content="Digital, Art, Design, Videogames, Games, Music, Portfolio, Montreal">
+	<meta name="author" content="Victor Ivanov">
+	<link rel='icon' href='http://exp.v-os.ca/ui/ico.ico' type='image/x-icon'>
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700|Roboto+Mono">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+
+<div id="top">
+	<div id="heartbeats"></div>
+	<span id="heartbeats-left" style="color: green;"></span>
+	<span id="page-title"></span>
+</div>
+
+<div id="main">
+	<div id="panel">
+		<div id="one-panel"><div id="panel-container-left">
+			<div class="dp" >
+				<div class="profile">
+					<img id="profile1" src="media/rahul.png" />
+				</div>
+				<span class="name" id="one-name"></span>
+				<span class="location" id="one-location"></span>
+			</div>
+			
+			<div class="invisible-divider"></div>
+			<span class="main-data" id="one-main-data"></span>
+			<div class="invisible-divider"></div>
+			<div id="one-tags"></div>
+		</div></div><div id="vertical-divider"></div><img id="heart" src="media/heart.svg"></img><div id="two-panel"><div id="panel-container-right">
+			
+			<div class="dp" >
+				<div class="profile">
+					<img id="profile2" src="media/vanshika.png" />
+				</div>
+				<div class="info">
+			<span class="name" id="two-name"></span>
+			<span class="location" id="two-location"></span>
+		</div>
+		</div>
+			<div class="invisible-divider"></div>
+			<span class="main-data" id="two-main-data"></span>
+			<div class="invisible-divider"></div>
+			<div id="two-tags"></div>
+		</div>
+		</div>
+	</div>
+</div>
+
+<div id="bottom">
+	<div id="date-left"><span id="time-separate" style="color: red;"></span></div>
+	<div id="date-right"><span id="time-till-meet" style="color: green;"></span></div>
+</div>
+ 
+<div id="attribution-container" style="text-align: center; margin-top: 20px;">
+    <p>Created with ❤️ by <strong>Developer Rahul</strong></p>
+  </div>
+  
+</body>
+<script src="credentials.js"></script>
+<script src="location.js"></script>
+<script src="logic.js"></script>
+</html>
